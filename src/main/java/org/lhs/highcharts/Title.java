@@ -1,5 +1,6 @@
 package org.lhs.highcharts;
 
+import lombok.ToString;
 import org.lhs.highcharts.codec.X;
 import org.lhs.highcharts.codec.Y;
 
@@ -10,6 +11,7 @@ import org.lhs.highcharts.codec.Y;
  * @author longhuashen
  * @since 15/11/7
  */
+@ToString
 public class Title implements Component {
 
     /**
@@ -51,6 +53,16 @@ public class Title implements Component {
      * 相对于垂直对齐的偏移量，可以使负数，单位是px
      */
     private int y;
+
+    /**
+     * 设置text值
+     *
+     * @param text
+     */
+    public Title text(String text) {
+        this.text = text;
+        return this;
+    }
 
     public String getText() {
         return text;

@@ -10,6 +10,11 @@ package org.lhs.highcharts;
 public class Tooltip implements Component {
 
     /**
+     * 启用或禁用数据提示框提示框的动画效果
+     */
+    private boolean animation;
+
+    /**
      * 背景颜色
      */
     private String backgroundColor;
@@ -30,9 +35,12 @@ public class Tooltip implements Component {
     private int borderWidth;
 
     /**
-     * 启用或禁用数据提示框提示框的动画效果
+     * 启用或禁用提示框
      */
-    private boolean animation;
+    private boolean enabled;
 
-
+    /**
+     * 当鼠标跨列的时候，提示框是否应该跟随它
+     */
+    private boolean followPointer;
 }
