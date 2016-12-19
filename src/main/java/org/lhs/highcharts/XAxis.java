@@ -1,5 +1,7 @@
 package org.lhs.highcharts;
 
+import lombok.Data;
+
 import java.util.List;
 
 /**
@@ -8,6 +10,7 @@ import java.util.List;
  * @author longhuashen
  * @since 15/12/8
  */
+@Data
 public class XAxis implements Component {
 
     /**
