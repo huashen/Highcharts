@@ -37,6 +37,10 @@ public class Option implements Serializable {
 
     private List<Series> series;
 
+    private Tooltip tooltip;
+
+    private Legend legend;
+
     /**
      * 设置title值
      *
@@ -102,16 +106,30 @@ public class Option implements Serializable {
         return this;
     }
 
-    public Option yAxis() {
+    public YAxis yAxis() {
         if (yAxis == null) {
             this.yAxis = new YAxis();
         }
-        return this;
+        return this.yAxis;
     }
 
     public Option yAxis(List<String> categories) {
         this.yAxis.setCategories(categories);
         return this;
+    }
+
+    public Tooltip tooltip() {
+        if (this.tooltip == null) {
+            this.tooltip = new Tooltip();
+        }
+        return this.tooltip;
+    }
+
+    public Legend legend() {
+        if (this.legend == null) {
+            this.legend = new Legend();
+        }
+        return this.legend;
     }
 
 }

@@ -82,4 +82,12 @@ public class YAxis implements Component {
      * 轴线的宽度
      */
     private String lineWidth;
+
+
+    private AxisTitle title;
+
+    public YAxis title(AxisTitle axisTitle) {
+        this.title = axisTitle;
+        return this;
+    }
 }

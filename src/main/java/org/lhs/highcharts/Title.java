@@ -1,6 +1,6 @@
 package org.lhs.highcharts;
 
-import lombok.ToString;
+import lombok.Data;
 import org.lhs.highcharts.codec.X;
 import org.lhs.highcharts.codec.Y;
 
@@ -11,7 +11,7 @@ import org.lhs.highcharts.codec.Y;
  * @author longhuashen
  * @since 15/11/7
  */
-@ToString
+@Data
 public class Title implements Component {
 
     /**
@@ -64,67 +64,13 @@ public class Title implements Component {
         return this;
     }
 
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public X getAlign() {
-        return align;
-    }
-
-    public void setAlign(X align) {
-        this.align = align;
-    }
-
-    public Y getVerticalAlign() {
-        return verticalAlign;
-    }
-
-    public void setVerticalAlign(Y verticalAlign) {
-        this.verticalAlign = verticalAlign;
-    }
-
-    public boolean isUseHTML() {
-        return useHTML;
-    }
-
-    public void setUseHTML(boolean useHTML) {
-        this.useHTML = useHTML;
-    }
-
-    public boolean isFloating() {
-        return floating;
-    }
-
-    public void setFloating(boolean floating) {
-        this.floating = floating;
-    }
-
-    public int getMargin() {
-        return margin;
-    }
-
-    public void setMargin(int margin) {
-        this.margin = margin;
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
+    public Title x(int x) {
         this.x = x;
+        return this;
     }
 
-    public int getY() {
-        return y;
-    }
-
-    public void setY(int y) {
+    public Title y(int y) {
         this.y = y;
+        return this;
     }
 }

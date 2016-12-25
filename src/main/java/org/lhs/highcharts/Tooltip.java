@@ -43,4 +43,21 @@ public class Tooltip implements Component {
      * 当鼠标跨列的时候，提示框是否应该跟随它
      */
     private boolean followPointer;
+
+    private String valueSuffix;
+
+    public Tooltip valueSuffix(String valueSuffix) {
+        this.valueSuffix = valueSuffix;
+        return this;
+    }
+
+    public Tooltip followPointer(boolean followPointer) {
+        this.followPointer = followPointer;
+        return this;
+    }
+
+    public Tooltip enabled(boolean enabled) {
+        this.enabled = enabled;
+        return this;
+    }
 }

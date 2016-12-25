@@ -16,19 +16,22 @@ public class LineTest {
     public void testLine() {
         Option option = new Option();
         //设置标题
-        option.title().text("Monthly Average Temperature").setX(-20);
-        option.title().setY(30);
+        option.title().text("Monthly Average Temperature").x(-20).y(5);
         //设置副标题
-        option.subtitle().text("Source: WorldClimate.com").setX(-20);
-        option.subtitle().setY(20);
+        option.subtitle().text("Source: WorldClimate.com").x(-20).y(20);
+
+        //设置纵轴
+        AxisTitle axisTitle = new AxisTitle();
+        axisTitle.setText("Temperature (°C)");
+        option.yAxis().title(axisTitle);
+
+        //设置数据提示框
+        option.tooltip().valueSuffix("°C").followPointer(true).enabled(true);
 
         //设置横轴
         List<String> categories = Lists.newArrayList("Jan", "Feb", "Mar", "Apr", "May", "Jun",
                 "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
         option.xAxis().xAxis(categories);
-
-        //设置纵轴
-        option.yAxis();
 
 
         List<Series> series = Lists.newArrayList();
