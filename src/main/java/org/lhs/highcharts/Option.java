@@ -41,6 +41,8 @@ public class Option implements Serializable {
 
     private Legend legend;
 
+    private Chart chart;
+
     /**
      * 设置title值
      *
@@ -130,6 +132,13 @@ public class Option implements Serializable {
             this.legend = new Legend();
         }
         return this.legend;
+    }
+
+    public Chart chart() {
+        if (this.chart == null) {
+            this.chart = new Chart();
+        }
+        return this.chart;
     }
 
 }

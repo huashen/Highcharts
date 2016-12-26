@@ -39,10 +39,10 @@ public class LineTest {
         List<Double> list2 = Lists.newArrayList(-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5);
         List<Double> list3 = Lists.newArrayList(-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0);
         List<Double> list4 = Lists.newArrayList(3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8);
-        series.add(new Series("Tokyo", list1));
-        series.add(new Series("New York", list2));
-        series.add(new Series("Berlin", list3));
-        series.add(new Series("London", list4));
+        series.add(new DoubleSeries("Tokyo", list1));
+        series.add(new DoubleSeries("New York", list2));
+        series.add(new DoubleSeries("Berlin", list3));
+        series.add(new DoubleSeries("London", list4));
 
         option.series().series(series);
 

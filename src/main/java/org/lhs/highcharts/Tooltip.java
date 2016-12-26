@@ -44,6 +44,8 @@ public class Tooltip implements Component {
      */
     private boolean followPointer;
 
+    private String pointFormat;
+
     private String valueSuffix;
 
     public Tooltip valueSuffix(String valueSuffix) {
@@ -58,6 +60,11 @@ public class Tooltip implements Component {
 
     public Tooltip enabled(boolean enabled) {
         this.enabled = enabled;
+        return this;
+    }
+
+    public Tooltip pointFormat(String pointFormat) {
+        this.pointFormat = pointFormat;
         return this;
     }
 }

@@ -17,8 +17,4 @@ public class Series implements Component {
 
     private String name;
 
-    private List<Double> data;
-
-
-
 }
