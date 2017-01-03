@@ -18,4 +18,14 @@ public class Legend implements Component {
     private String verticalAlign;
 
     private int borderWidth;
+
+    public Legend layout(String layout) {
+        this.layout = layout;
+        return this;
+    }
+
+    public Legend align(String align) {
+        this.align = align;
+        return this;
+    }
 }

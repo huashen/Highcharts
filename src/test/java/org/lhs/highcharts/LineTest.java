@@ -31,7 +31,7 @@ public class LineTest {
         //设置横轴
         List<String> categories = Lists.newArrayList("Jan", "Feb", "Mar", "Apr", "May", "Jun",
                 "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
-        option.xAxis().xAxis(categories);
+        option.xAxis().categories(categories);
 
 
         List<Series> series = Lists.newArrayList();

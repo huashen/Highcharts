@@ -63,4 +63,8 @@ public class XAxis implements Component {
     private String id;
 
 
+    public XAxis categories(List<String> categories) {
+        this.categories = categories;
+        return this;
+    }
 }

@@ -87,11 +87,11 @@ public class Option implements Serializable {
         return this.subtitle;
     }
 
-    public Option xAxis() {
+    public XAxis xAxis() {
         if (xAxis == null) {
             this.xAxis = new XAxis();
         }
-        return this;
+        return this.xAxis;
     }
 
     public Option xAxis(List<String> categories) {
